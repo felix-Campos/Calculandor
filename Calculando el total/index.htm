@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assts\ccs\style.css">
+</head>
+<body>
+<div class="container">
+    <main>
+    <img class="imagen-card" src="https://www.pngall.com/wp-content/uploads/2016/05/Laptop-PNG.png" alt=""/>
+    <P>NOTEBOOK GAMER</P>
+    <input id="inputcantidad" type="number" placeholder="Cantidad"/>
+    <input id="inputcolor" type="text" placeholder="Color"/>
+    <H3>Precio $<span id="precio">250000</span></H3>
+    <button 
+    onclick="
+    cantidad = document.querySelector('#inputcantidad').value
+
+    precio = document.querySelector('#precio').textContent
+    total = cantidad * precio
+    color = document.getElementById('inputcolor') .value
+    document.querySelector('.preciototal') . innerHTML = total
+    document.querySelector('.cantidadfinal') . innerHTML = cantidad
+    document .querySelector('.colorfinal').style.backgroundColor = color
+
+    "
+    >Calcular Total</button>
+   </main> 
+   <section>
+    <h3 style="color: azure;">Total:$ <span class="preciototal">0</span> </h3>
+    <h3 style="color: azure;">Cantidad:<span class="cantidadfinal">0</span> </h3>
+    <h3 style="color: azure;">Color: <span class="colorfinal"></span> </h3>
+   </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.imagen-card{
+    height: 14rem;
+    width: auto;
+}
+main{
+    height: 25rem;
+    width: 18rem;
+    background-color: blue;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/Imagen1.jpg);
+    text-align: center;
+}
+.colorfinal{
+    background-color: black;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    display:inline-block;
+}
